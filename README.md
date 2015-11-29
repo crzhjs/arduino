@@ -8,7 +8,7 @@ int delayTime = 3000;
 
 void setup() 
 {
- // void: means do not have to return anything (e.g. integer, etc). 
+// void: means do not have to return anything (e.g. integer, etc). 
 // put your setup code here, to run once:
 
 pinMode(thePin, OUTPUT); 
