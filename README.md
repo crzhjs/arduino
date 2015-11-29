@@ -1,4 +1,4 @@
-# 09.29: LED Blink
+# 09.29: Simple LED Blink
 ## Blink LED on arduino board
 
 ```arduino 
