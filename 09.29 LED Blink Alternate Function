@@ -1,0 +1,48 @@
+'''arduino 
+int thePin = 13;
+int delayTime = 1000;
+
+void setup() {
+  // void: means do not have to return anything (e.g. integer, etc). 
+  // put your setup code here, to run once:
+
+  pinMode(thePin, OUTPUT); 
+  // pinMode: (function) tells a pin what to do.
+  // output: (macro) rip out text and put something in its place. 
+  delayTime = delayTime / 2; 
+  
+}
+
+void loop() 
+{
+ doesBlinkLong(); 
+ doesBlinkShort(); 
+ doesBlink(4);
+ doesBlink(2); 
+}
+
+void doesBlink (int multiplier)
+// defining a function and need to take a multiplier 
+{
+ digitalWrite(thePin, HIGH);
+ delay(delayTime*multiplier);
+ digitalWrite(thePin, LOW);
+ delay(delayTime*multiplier); 
+}
+
+void doesBlinkLong ()
+{
+  digitalWrite(thePin, HIGH); 
+  delay(delayTime*2);
+  digitalWrite(thePin, LOW);
+  delay(delayTime*2);
+}
+
+void doesBlinkShort ()
+{
+  digitalWrite(thePin, HIGH); 
+  delay(delayTime*2);
+  digitalWrite(thePin, LOW);
+  delay(delayTime*2);
+}
+'''
